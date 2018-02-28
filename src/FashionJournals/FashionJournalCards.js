@@ -28,7 +28,7 @@ const FashionJournalCards = (props) => {
                                         <CardTitle>{fashionjournal.weather}</CardTitle>
                                         <CardSubtitle>{fashionjournal.occassion}</CardSubtitle>
                                         <CardText>{fashionjournal.mood}</CardText>
-                                        <Button id={fashionjournal.id} onSubmit={this.handleSubmit} color="grey">add to fashion journal!</Button>
+                                        <Button id={fashionjournal.id} onClick={e => props.FashionJournalsHistory(e, fashionjournal)} color="grey">add to journal!</Button>
                                         
                                     </Card>
                                 </Col>
@@ -47,7 +47,6 @@ const FashionJournalCards = (props) => {
                                         <CardTitle>{fashionjournal.weather}</CardTitle>
                                         <CardSubtitle>{fashionjournal.occassion}</CardSubtitle>
                                         <CardText>{fashionjournal.mood}</CardText>
-                                        <Button id={fashionjournal.id} onClick={props.delete} color="danger">Delete</Button>
                                         <Button id={fashionjournal.id} onSubmit={this.handleSubmit} color="grey">submit</Button>
 
                                     </Card>
@@ -65,7 +64,6 @@ const FashionJournalCards = (props) => {
                                                 <CardTitle>{fashionjournal.weather}</CardTitle>
                                                 <CardSubtitle>{fashionjournal.occassion}</CardSubtitle>
                                                 <CardText>{fashionjournal.mood}</CardText>
-                                                <Button id={fashionjournal.id} onClick={props.delete} color="danger">Delete</Button>
                                                 <Button id={fashionjournal.id} onSubmit={this.handleSubmit} color="grey">submit</Button>
         
                                             </Card>
@@ -83,7 +81,6 @@ const FashionJournalCards = (props) => {
                                                         <CardTitle>{fashionjournal.weather}</CardTitle>
                                                         <CardSubtitle>{fashionjournal.occassion}</CardSubtitle>
                                                         <CardText>{fashionjournal.mood}</CardText>
-                                                        <Button id={fashionjournal.id} onClick={props.delete} color="danger">Delete</Button>
                                                         <Button id={fashionjournal.id} onSubmit={this.handleSubmit} color="grey">submit</Button>
                 
                                                     </Card>
@@ -101,7 +98,6 @@ const FashionJournalCards = (props) => {
                                                                 <CardTitle>{fashionjournal.weather}</CardTitle>
                                                                 <CardSubtitle>{fashionjournal.occassion}</CardSubtitle>
                                                                 <CardText>{fashionjournal.mood}</CardText>
-                                                                <Button id={fashionjournal.id} onClick={props.delete} color="danger">Delete</Button>
                                                                 <Button id={fashionjournal.id} onSubmit={this.handleSubmit} color="grey">submit</Button>
                         
                                                             </Card>
@@ -119,7 +115,7 @@ const FashionJournalCards = (props) => {
                                                                         <CardTitle>{fashionjournal.weather}</CardTitle>
                                                                         <CardSubtitle>{fashionjournal.occassion}</CardSubtitle>
                                                                         <CardText>{fashionjournal.mood}</CardText>
-                                                                        <Button id={fashionjournal.id} onClick={props.delete} color="danger">Delete</Button>
+                                                                        
                                                                         <Button id={fashionjournal.id} onSubmit={this.handleSubmit} color="grey">add to fashion journal.</Button>
                                 
                                                                     </Card>
@@ -137,7 +133,7 @@ const FashionJournalCards = (props) => {
                                                                                 <CardTitle>{fashionjournal.weather}</CardTitle>
                                                                                 <CardSubtitle>{fashionjournal.occassion}</CardSubtitle>
                                                                                 <CardText>{fashionjournal.mood}</CardText>
-                                                                                <Button id={fashionjournal.id} onClick={props.delete} color="danger">Delete</Button>
+
                                                                                 <Button id={fashionjournal.id} onSubmit={this.handleSubmit} color="grey">submit</Button>
                                         
                                                                             </Card>
@@ -155,7 +151,7 @@ const FashionJournalCards = (props) => {
                                                                                         <CardTitle>{fashionjournal.weather}</CardTitle>
                                                                                         <CardSubtitle>{fashionjournal.occassion}</CardSubtitle>
                                                                                         <CardText>{fashionjournal.mood}</CardText>
-                                                                                        <Button id={fashionjournal.id} onClick={props.delete} color="danger">Delete</Button>
+                                                                                  
                                                                                         <Button id={fashionjournal.id} onSubmit={this.handleSubmit} color="grey">submit</Button>
                                                 
                                                                                     </Card>
@@ -173,7 +169,7 @@ const FashionJournalCards = (props) => {
                                                                                                 <CardTitle>{fashionjournal.weather}</CardTitle>
                                                                                                 <CardSubtitle>{fashionjournal.occassion}</CardSubtitle>
                                                                                                 <CardText>{fashionjournal.mood}</CardText>
-                                                                                                <Button id={fashionjournal.id} onClick={props.delete} color="danger">Delete</Button>
+                                                                                              
                                                                                                 <Button id={fashionjournal.id} onSubmit={this.handleSubmit} color="grey">submit</Button>
                                                         
                                                                                             </Card>
@@ -191,7 +187,7 @@ const FashionJournalCards = (props) => {
                                                                                                         <CardTitle>{fashionjournal.weather}</CardTitle>
                                                                                                         <CardSubtitle>{fashionjournal.occassion}</CardSubtitle>
                                                                                                         <CardText>{fashionjournal.mood}</CardText>
-                                                                                                        <Button id={fashionjournal.id} onClick={props.delete} color="danger">Delete</Button>
+                                                                                                     
                                                                                                         <Button id={fashionjournal.id} onSubmit={this.handleSubmit} color="grey">submit</Button>
                                                                 
                                                                                                     </Card>
@@ -209,7 +205,7 @@ const FashionJournalCards = (props) => {
                                                                                                                 <CardTitle>{fashionjournal.weather}</CardTitle>
                                                                                                                 <CardSubtitle>{fashionjournal.occassion}</CardSubtitle>
                                                                                                                 <CardText>{fashionjournal.mood}</CardText>
-                                                                                                                <Button id={fashionjournal.id} onClick={props.delete} color="danger">Delete</Button>
+                                                                                                             
                                                                                                                 <Button id={fashionjournal.id} onSubmit={this.handleSubmit} color="grey">submit</Button>
                                                                         
                                                                                                             </Card>
@@ -227,7 +223,7 @@ const FashionJournalCards = (props) => {
                                                                                                                         <CardTitle>{fashionjournal.weather}</CardTitle>
                                                                                                                         <CardSubtitle>{fashionjournal.occassion}</CardSubtitle>
                                                                                                                         <CardText>{fashionjournal.mood}</CardText>
-                                                                                                                        <Button id={fashionjournal.id} onClick={props.delete} color="danger">Delete</Button>
+                                                                                                                       
                                                                                                                         <Button id={fashionjournal.id} onSubmit={this.handleSubmit} color="grey">submit</Button>
                                                                                 
                                                                                                                     </Card>
@@ -245,7 +241,7 @@ const FashionJournalCards = (props) => {
                                                                                                                                 <CardTitle>{fashionjournal.weather}</CardTitle>
                                                                                                                                 <CardSubtitle>{fashionjournal.occassion}</CardSubtitle>
                                                                                                                                 <CardText>{fashionjournal.mood}</CardText>
-                                                                                                                                <Button id={fashionjournal.id} onClick={props.delete} color="danger">Delete</Button>
+                                                                                                                              
                                                                                                                                 <Button id={fashionjournal.id} onSubmit={this.handleSubmit} color="grey">submit</Button>
                                                                                         
                                                                                                                             </Card>
@@ -264,7 +260,7 @@ const FashionJournalCards = (props) => {
                                                                                                                                         <CardTitle>{fashionjournal.weather}</CardTitle>
                                                                                                                                         <CardSubtitle>{fashionjournal.occassion}</CardSubtitle>
                                                                                                                                         <CardText>{fashionjournal.mood}</CardText>
-                                                                                                                                        <Button id={fashionjournal.id} onClick={props.delete} color="danger">Delete</Button>
+                                                                                                                                        
                                                                                                                                         <Button id={fashionjournal.id} onSubmit={this.handleSubmit} color="grey">submit</Button>
                                                                                                 
                                                                                                                                     </Card>
@@ -282,7 +278,7 @@ const FashionJournalCards = (props) => {
                                                                                                                                                 <CardTitle>{fashionjournal.weather}</CardTitle>
                                                                                                                                                 <CardSubtitle>{fashionjournal.occassion}</CardSubtitle>
                                                                                                                                                 <CardText>{fashionjournal.mood}</CardText>
-                                                                                                                                                <Button id={fashionjournal.id} onClick={props.delete} color="danger">Delete</Button>
+                                                                                                                                               
                                                                                                                                                 <Button id={fashionjournal.id} onSubmit={this.handleSubmit} color="grey">submit</Button>
                                                                                                         
                                                                                                                                             </Card>
@@ -300,7 +296,7 @@ const FashionJournalCards = (props) => {
                                                                                                                                                         <CardTitle>{fashionjournal.weather}</CardTitle>
                                                                                                                                                         <CardSubtitle>{fashionjournal.occassion}</CardSubtitle>
                                                                                                                                                         <CardText>{fashionjournal.mood}</CardText>
-                                                                                                                                                        <Button id={fashionjournal.id} onClick={props.delete} color="danger">Delete</Button>
+                                                                                                                                                        
                                                                                                                                                         <Button id={fashionjournal.id} onSubmit={this.handleSubmit} color="grey">submit</Button>
                                                                                                                 
                                                                                                                                                     </Card>
@@ -318,7 +314,7 @@ const FashionJournalCards = (props) => {
                                                                                                                                                                 <CardTitle>{fashionjournal.weather}</CardTitle>
                                                                                                                                                                 <CardSubtitle>{fashionjournal.occassion}</CardSubtitle>
                                                                                                                                                                 <CardText>{fashionjournal.mood}</CardText>
-                                                                                                                                                                <Button id={fashionjournal.id} onClick={props.delete} color="danger">Delete</Button>
+                                                                                                                                                    
                                                                                                                                                                 <Button id={fashionjournal.id} onSubmit={this.handleSubmit} color="grey">submit</Button>
                                                                                                                         
                                                                                                                                                             </Card>
@@ -336,7 +332,7 @@ const FashionJournalCards = (props) => {
                                                                                                                                                                         <CardTitle>{fashionjournal.weather}</CardTitle>
                                                                                                                                                                         <CardSubtitle>{fashionjournal.occassion}</CardSubtitle>
                                                                                                                                                                         <CardText>{fashionjournal.mood}</CardText>
-                                                                                                                                                                        <Button id={fashionjournal.id} onClick={props.delete} color="danger">Delete</Button>
+                                                                                                                                                                       
                                                                                                                                                                         <Button id={fashionjournal.id} onSubmit={this.handleSubmit} color="grey">submit</Button>
                                                                                                                                 
                                                                                                                                                                     </Card>
@@ -354,7 +350,7 @@ const FashionJournalCards = (props) => {
                                                                                                                                                                                 <CardTitle>{fashionjournal.weather}</CardTitle>
                                                                                                                                                                                 <CardSubtitle>{fashionjournal.occassion}</CardSubtitle>
                                                                                                                                                                                 <CardText>{fashionjournal.mood}</CardText>
-                                                                                                                                                                                <Button id={fashionjournal.id} onClick={props.delete} color="danger">Delete</Button>
+                                                                                                                                                                               
                                                                                                                                                                                 <Button id={fashionjournal.id} onSubmit={this.handleSubmit} color="grey">submit</Button>
                                                                                                                                         
                                                                                                                                                                             </Card>
@@ -372,7 +368,7 @@ const FashionJournalCards = (props) => {
                                                                                                                                                                                         <CardTitle>{fashionjournal.weather}</CardTitle>
                                                                                                                                                                                         <CardSubtitle>{fashionjournal.occassion}</CardSubtitle>
                                                                                                                                                                                         <CardText>{fashionjournal.mood}</CardText>
-                                                                                                                                                                                        <Button id={fashionjournal.id} onClick={props.delete} color="danger">Delete</Button>
+                                                                                                                                                                                      
                                                                                                                                                                                         <Button id={fashionjournal.id} onSubmit={this.handleSubmit} color="grey">submit</Button>
                                                                                                                                                 
                                                                                                                                                                                     </Card>
@@ -390,7 +386,7 @@ const FashionJournalCards = (props) => {
                                                                                                                                                                                                 <CardTitle>{fashionjournal.weather}</CardTitle>
                                                                                                                                                                                                 <CardSubtitle>{fashionjournal.occassion}</CardSubtitle>
                                                                                                                                                                                                 <CardText>{fashionjournal.mood}</CardText>
-                                                                                                                                                                                                <Button id={fashionjournal.id} onClick={props.delete} color="danger">Delete</Button>
+                                                                                                                                                                                        
                                                                                                                                                                                                 <Button id={fashionjournal.id} onSubmit={this.handleSubmit} color="grey">submit</Button>
                                                                                                                                                         
                                                                                                                                                                                             </Card>
@@ -408,7 +404,7 @@ const FashionJournalCards = (props) => {
                                                                                                                                                                                                         <CardTitle>{fashionjournal.weather}</CardTitle>
                                                                                                                                                                                                         <CardSubtitle>{fashionjournal.occassion}</CardSubtitle>
                                                                                                                                                                                                         <CardText>{fashionjournal.mood}</CardText>
-                                                                                                                                                                                                        <Button id={fashionjournal.id} onClick={props.delete} color="danger">Delete</Button>
+                                                                                                                                                                                                      
                                                                                                                                                                                                         <Button id={fashionjournal.id} onSubmit={this.handleSubmit} color="grey">submit</Button>
                                                                                                                                                                 
                                                                                                                                                                                                     </Card>
@@ -426,7 +422,7 @@ const FashionJournalCards = (props) => {
                                                                                                                                                                                                                 <CardTitle>{fashionjournal.weather}</CardTitle>
                                                                                                                                                                                                                 <CardSubtitle>{fashionjournal.occassion}</CardSubtitle>
                                                                                                                                                                                                                 <CardText>{fashionjournal.mood}</CardText>
-                                                                                                                                                                                                                <Button id={fashionjournal.id} onClick={props.delete} color="danger">Delete</Button>
+                                                                                                                                                                                                   
                                                                                                                                                                                                                 <Button id={fashionjournal.id} onSubmit={this.handleSubmit} color="grey">submit</Button>
                                                                                                                                                                         
                                                                                                                                                                                                             </Card>
@@ -444,7 +440,7 @@ const FashionJournalCards = (props) => {
                                                                                                                                                                                                                         <CardTitle>{fashionjournal.weather}</CardTitle>
                                                                                                                                                                                                                         <CardSubtitle>{fashionjournal.occassion}</CardSubtitle>
                                                                                                                                                                                                                         <CardText>{fashionjournal.mood}</CardText>
-                                                                                                                                                                                                                        <Button id={fashionjournal.id} onClick={props.delete} color="danger">Delete</Button>
+                                                                                                                                                                                                                       
                                                                                                                                                                                                                         <Button id={fashionjournal.id} onSubmit={this.handleSubmit} color="grey">submit</Button>
                                                                                                                                                                                 
                                                                                                                                                                                                                     </Card>
@@ -462,7 +458,7 @@ const FashionJournalCards = (props) => {
                                                                                                                                                                                                                                 <CardTitle>{fashionjournal.weather}</CardTitle>
                                                                                                                                                                                                                                 <CardSubtitle>{fashionjournal.occassion}</CardSubtitle>
                                                                                                                                                                                                                                 <CardText>{fashionjournal.mood}</CardText>
-                                                                                                                                                                                                                                <Button id={fashionjournal.id} onClick={props.delete} color="danger">Delete</Button>
+                                                                                                                                                                                                                                
                                                                                                                                                                                                                                 <Button id={fashionjournal.id} onSubmit={this.handleSubmit} color="grey">submit</Button>
                                                                                                                                                                                         
                                                                                                                                                                                                                             </Card>
@@ -480,7 +476,7 @@ const FashionJournalCards = (props) => {
                                                                                                                                                                                                                                         <CardTitle>{fashionjournal.weather}</CardTitle>
                                                                                                                                                                                                                                         <CardSubtitle>{fashionjournal.occassion}</CardSubtitle>
                                                                                                                                                                                                                                         <CardText>{fashionjournal.mood}</CardText>
-                                                                                                                                                                                                                                        <Button id={fashionjournal.id} onClick={props.delete} color="danger">Delete</Button>
+                                                                                                                                                                                                                              
                                                                                                                                                                                                                                         <Button id={fashionjournal.id} onSubmit={this.handleSubmit} color="grey">submit</Button>
                                                                                                                                                                                                 
                                                                                                                                                                                                                                     </Card>
@@ -498,7 +494,7 @@ const FashionJournalCards = (props) => {
                                                                                                                                                                                                                                                 <CardTitle>{fashionjournal.weather}</CardTitle>
                                                                                                                                                                                                                                                 <CardSubtitle>{fashionjournal.occassion}</CardSubtitle>
                                                                                                                                                                                                                                                 <CardText>{fashionjournal.mood}</CardText>
-                                                                                                                                                                                                                                                <Button id={fashionjournal.id} onClick={props.delete} color="danger">Delete</Button>
+                                                                                                                                                                                                                                               
                                                                                                                                                                                                                                                 <Button id={fashionjournal.id} onSubmit={this.handleSubmit} color="grey">submit</Button>
                                                                                                                                                                                                         
                                                                                                                                                                                                                                             </Card>
