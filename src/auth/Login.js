@@ -23,7 +23,7 @@ class Login extends Component {
     }
 
     handleSubmit(event) {
-        fetch("http://localhost:3000/api/login", {
+        fetch("http://localhost:3005/api/login", {
             method: 'POST',
             body: JSON.stringify({user:this.state}),
             headers: new Headers({
@@ -42,16 +42,15 @@ class Login extends Component {
         return (
 
             <div>
-                <h1>Login</h1>
-                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus repellat, atque nulla, soluta vero reprehenderit numquam incidunt, rem quaerat quos voluptatum perferendis. Distinctio culpa iste atque blanditiis placeat qui ipsa?</h6>
+                <h1>login. </h1>
                 <Form onSubmit={this.handleSubmit} >
                     <FormGroup>
                         <Label for="username">Username</Label>
-                        <Input id="li_username" type="text" name="username" placeholder="enter username" onChange={this.handleChange} />
+                        <Input id="li_username" type="text" name="username" placeholder="username" onChange={this.handleChange} />
                     </FormGroup>
                     <FormGroup>
                         <Label for="password">Password</Label>
-                        <Input id="li_password" type="password" name="password" placeholder="enter password" onChange={this.handleChange} />
+                        <Input id="li_password" type="password" name="password" placeholder="password" rel="password" onChange={this.handleChange} />
                     </FormGroup>
                     <Button type="submit"> Submit </Button>
                 </Form>

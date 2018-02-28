@@ -22,7 +22,7 @@ class Signup extends Component {
     }
 
     handleSubmit(event) {
-        fetch("http://localhost:3000/api/user", {
+        fetch("http://localhost:3005/api/user", {
             method: 'POST',
             body: JSON.stringify({user:this.state}),
             headers: new Headers({
@@ -51,17 +51,16 @@ class Signup extends Component {
         const submitHandler = !this.state.username ? this.validateSignUp : this.handleSubmit
         return (
             <div>
-                <h1>Sign Up</h1>
-                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus repellat, atque nulla, soluta vero reprehenderit numquam incidunt, rem quaerat quos voluptatum perferendis. Distinctio culpa iste atque blanditiis placeat qui ipsa?</h6>
+                <h1>register.</h1>
                 <Form onSubmit={submitHandler} >
                     <FormGroup>
                         <Label for="username">username</Label>
-                        <Input id="username" type="text" name="username" placeholder="enter username" onChange={this.handleChange} />
+                        <Input id="username" type="text" name="username" placeholder="username" onChange={this.handleChange} />
                         {this.state.errorMessage && <span className="error">user name is required</span>}
                     </FormGroup>
                     <FormGroup>
                         <Label for="password">Password</Label>
-                        <Input id="su_password" type="password" name="password" placeholder="enter password" onChange={this.handleChange} />
+                        <Input id="su_password" type="password" name="password" placeholder="password" onChange={this.handleChange} />
                     </FormGroup>
                     <Button type="submit"> Submit </Button>
                 </Form>

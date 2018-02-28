@@ -1,12 +1,12 @@
 import React from 'react';
-import WorkoutIndex from '../workouts/WorkoutIndex';
+import FashionJournalIndex from '../FashionJournals/FashionJournalIndex';
 
 class Splash extends React.Component{
 
     render(){
         return (
             <div>
-                <WorkoutIndex token={this.props.sessionToken}/>
+                <FashionJournalIndex token={this.props.sessionToken}/>
             </div>
         )
     }

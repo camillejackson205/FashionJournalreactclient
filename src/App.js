@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Auth from './auth/Auth';
 import SiteBar from './home/Navbar';
 import Splash from './home/Splash';
+import { Button } from 'reactstrap';
 import {
   BrowserRouter as Router,
   Route

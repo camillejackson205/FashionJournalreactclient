@@ -6,6 +6,9 @@ import Login from './Login';
 
 const Auth = (props) => {
     return (
+        <div className="home-background" >
+            <h1 className="home">  V A C K E R S J A L </h1>
+            
         <Container className="auth-container">
             <Row>
                 <Col md="6">
@@ -16,7 +19,17 @@ const Auth = (props) => {
                 </Col>
             </Row>
         </Container>
+        </div>
+    
     )
 }
 
 export default Auth;
+
+
+
+
+
+
+
+

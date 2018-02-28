@@ -29,16 +29,16 @@ class SiteBar extends React.Component {
         return (
             <div>
                 <Navbar color="faded"  light expand="md">
-                    <NavbarBrand href="/">Sample Auth App</NavbarBrand>
+                    <NavbarBrand href="/"></NavbarBrand>
                     <NavbarToggler onClick={this.props.loggout} />
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem>
                                 <Button onClick={() => this.props.clickLogout()}>Logout</Button>
                             </NavItem>
-                            <NavItem>
+                             <NavItem>
                                 <NavLink href="https://github.com/">Github</NavLink>
-                            </NavItem>
+                            </NavItem> 
                         </Nav>
                     </Collapse>
                 </Navbar>
